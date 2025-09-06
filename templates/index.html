@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cat vs Dog Classifier</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body> 
+  <!-- Theme Toggle -->
+   <button id="themeToggle" class="theme-toggle">
+    <span class="toggle-icon">🌙</span>
+  </button> 
+
+  <!-- Upload Form -->
+  <div class="container">
+    <h1>Cat 🐱 vs Dog 🐶 Classifier</h1>
+    <form id="classifier-form">
+      <div id="dropArea" class="drop-area">
+        <p class="drop-text">Drag & drop an image or click to select</p>
+        <input type="file" id="fileInput" name="file" accept="image/*" hidden />
+      </div>
+      <button id="predictBtn" type="submit">
+        <span>Predict</span>
+      </button>
+    </form>
+  </div> 
+
+  <!-- Result Section -->
+   <div id="resultContainer" class="result-container" style="display:none;">
+    <h2>Prediction Result</h2>
+    <p id="predictionResult" class="prediction-text"></p>
+
+    <div class="confidence-bar">
+      <div id="confidenceFill" class="confidence-fill"></div>
+    </div>
+    <p id="confidenceValue" class="confidence-value"></p>
+
+    <img id="resultImage" class="result-image" alt="Uploaded Preview" />
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> 
+
