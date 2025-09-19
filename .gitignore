@@ -5,5 +5,5 @@ best_model.keras
 cat_dog_classifier.keras
 *.keras
 class_weights.json
-cat_dog_model_improved.keras
-cat_dog_model_v3_finetuned.keras
+# cat_dog_model_improved.keras
+# cat_dog_model_v3_finetuned.keras
