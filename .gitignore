@@ -1,7 +1,3 @@
-dataset
-uploads
+
 venv
-best_model.keras
-cat_dog_classifier.keras
-*.keras
-class_weights.json
+
